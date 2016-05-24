@@ -5,6 +5,6 @@ class users {
  ensure => present,
  }
 
-user { 'fundamentals':
+user { 'fundas':
  ensure => present,
  }
