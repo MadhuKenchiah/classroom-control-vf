@@ -1,7 +1,7 @@
 #Enter file contents here
 
 class users {
- user { 'fundamentals'
+ user { 'fundamentals':
  ensure => present,
  }
 
