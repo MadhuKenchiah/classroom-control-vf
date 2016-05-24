@@ -1,10 +1,10 @@
 #Enter file contents here
 
 class users {
- user { 'fundamentals':
+ user {'fundamentals':
  ensure => present,
  }
 
-user { 'fundas':
+user {'fundas':
  ensure => present,
  }
