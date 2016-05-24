@@ -52,7 +52,7 @@ node default {
   #  content => "Hello world\n",
   #}
   
-  exce { "cowsay 'welcome to ${::fqdn}!' > /etc/motd":
+  exec { "cowsay 'welcome to ${::fqdn}!' > /etc/motd":
   path => '/usr/bin:/usr/local/bin',
   creates => '/etc/motd',
   }
