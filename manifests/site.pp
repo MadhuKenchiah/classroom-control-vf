@@ -54,10 +54,11 @@ node default {
   
   exce { "cowsay 'welcome to ${::fqdn}!' > /etc/motd":
   path => /usr/bin:/usr/local/bin',
-  created => '/etc/motd',
+  creates => '/etc/motd',
   }
   
   host { 'testing host entry':
+  ensure => 'created',
   name => 'testing.puppetlabs.vm',
   ip => '127.0.0.1',
   }
