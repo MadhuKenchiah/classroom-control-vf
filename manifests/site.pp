@@ -58,7 +58,7 @@ node default {
   }
   
   host { 'testing host entry':
-  ensure => 'created',
+  ensure => 'present',
   name => 'testing.puppetlabs.vm',
   ip => '127.0.0.1',
   }
